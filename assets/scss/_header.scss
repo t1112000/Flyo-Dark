@@ -1,0 +1,42 @@
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 0 4rem;
+
+  &-right {
+    display: flex;
+    gap: 0 5rem;
+    color: #fff;
+
+    &__link {
+      cursor: pointer;
+      position: relative;
+      font-size: 1.8rem;
+      font-weight: 600;
+
+      &:hover::after {
+        width: 100%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+
+        transition: width 0.5s ease;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .header-right {
+    display: none;
+  }
+}

@@ -1,0 +1,90 @@
+/* QUOTES */
+.quotes {
+  position: relative;
+  &-image {
+    position: absolute;
+    left: -10px;
+    top: -35px;
+  }
+
+  &-list {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    gap: 0 3rem;
+  }
+
+  &-item {
+    position: relative;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 1rem;
+    color: #fff;
+    padding: 4.6rem 2.6rem 2.6rem 2.6rem;
+    box-shadow: 4px 4px 10px 0 hsl(218, 28%, 13%);
+    &__text {
+      font-size: 1.6rem;
+      font-weight: 300;
+      margin-bottom: 2.6rem;
+    }
+  }
+
+  &-person {
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+
+    &__img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #ccc;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .quotes {
+    &-image {
+      left: 10%;
+      top: -40px;
+    }
+
+    &-list {
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 4rem 0;
+      padding: 0 10rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .quotes {
+    &-image {
+      left: 14%;
+      top: -35px;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .quotes-list {
+    padding: 0 4rem;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "fylo-dark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w assets/scss/app.scss assets/css/app.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
