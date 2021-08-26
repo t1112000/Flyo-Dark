@@ -209,6 +209,10 @@
   position: relative;
   max-width: max-content;
 }
+.productive-content__link img {
+  width: 25px;
+  height: 25px;
+}
 .productive-content__link:hover::after {
   width: 100%;
 }

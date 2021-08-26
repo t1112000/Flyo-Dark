@@ -35,6 +35,11 @@
       position: relative;
       max-width: max-content;
 
+      img {
+        width: 25px;
+        height: 25px;
+      }
+
       &:hover::after {
         width: 100%;
       }
